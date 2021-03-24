@@ -237,7 +237,7 @@ main .container {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-left: 140px;
+    margin-left: 40px;
     background: #FFFFFF;
     box-shadow: 0px 20px 34px 25px rgba(65, 62, 101, 0.102519);
     border-radius: 10px;
@@ -301,7 +301,7 @@ main .container {
 .main-thing {
     width: 30%;
     text-align: center;
-    margin-left: 60px;
+    margin-left: 40px;
     margin-top: 40px;
 }
 
@@ -325,7 +325,7 @@ main .container {
 section .container {
     display: flex;
     flex-direction: column;
-    padding: 80px 0px 60px 60px;
+    padding: 80px 0px 60px 0px;
 }
 
 .section-title {
@@ -445,14 +445,14 @@ section .container {
 }
 
 .reviews-section {
-    padding: 30px 0px 60px 80px;
+    padding: 30px 0px 60px 0px;
 }
 
 .reviews-section .container {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 30px 0px 50px 60px;
+    padding: 30px 0px 50px 40px;
 }
 
 .reviews {
@@ -547,7 +547,7 @@ section .container {
     display: flex;
     flex-direction: row;
     align-items: center;
-    margin-left: 80px;
+    margin-left: 40px;
 }
 
 .information {
@@ -555,7 +555,7 @@ section .container {
 }
 
 .author-info {
-    margin-left: 50px;
+    margin-left: 40px;
     font-size: 16px;
     line-height: 28px;
     letter-spacing: -0.500211px;
@@ -568,7 +568,7 @@ section .container {
     line-height: 28px;
     letter-spacing: -0.750316px;
     color: #19191B;
-    margin-left: 50px;
+    margin-left: 40px;
     margin-bottom: 20px;
 
 }
@@ -715,7 +715,7 @@ section .container {
 }
 
 .questions-list {
-    margin: 80px 0px 80px 60px;
+    margin: 80px 0px 80px 40px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -774,6 +774,8 @@ section .container {
 }
 
 .footer-get-link {
+    width: 220px;
+    height: 50px;
     display: inline-block;
     margin-left: 200px;
     padding: 12px 30px;
@@ -832,4 +834,63 @@ footer .container {
     text-align: right;
     letter-spacing: -0.500211px;
     color: #19191B;
+}
+
+
+@media (max-width:1160px) {
+    .container {
+        width: 1000px;
+    }
+
+    .header-photo {
+        width: 450px;
+    }
+
+    .header-info-box {
+        padding-top: 20px;
+    }
+
+    .footer-list {
+        margin-left: 250px;
+    }
+
+  
+}
+
+
+@media (max-width:1020px) {
+    .container {
+        width: 900px;
+    }
+
+    .header-photo {
+        width: 400px;
+    }
+
+    .header-info-box {
+        width: 50%;
+    }
+
+    .header-comment-section {
+        padding-left: 200px;
+    }
+
+    .chapter-box {
+        width: 800px;
+        margin-left: 10px;
+        justify-content: space-around;
+    }
+
+    .chapter-number {
+        width: 35%;
+    }
+
+    .chapter-info {
+        width: 40%;
+    }
+
+    .footer-list {
+        margin-left: 200px;
+    }
+
 }
