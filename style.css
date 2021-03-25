@@ -21,11 +21,12 @@ header .container {
     display: flex;
     flex-direction: column;
     padding: 20px 0px;
+  
 }
 
 nav {
     display: flex;
-    align-items: center;
+    
 }
 
 .nav-list {
@@ -86,6 +87,12 @@ nav {
     text-decoration: underline;
 }
 
+
+header .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
 .header-info {
     padding-top: 100px;
     display: flex;
@@ -93,11 +100,11 @@ nav {
 }
 
 .header-img {
-    width: 45%;
+    width: 40%;
 }
 
 .header-info-box {
-    width: 50%;
+    width: 45%;
     padding-top: 70px;
 }
 
@@ -136,7 +143,6 @@ nav {
 .header-get-link {
     display: inline-block;
     margin-top: 50px;
-    margin-left: 50px;
     padding: 13px 14px;
     font-size: 19px;
     line-height: 25px;
@@ -156,7 +162,6 @@ nav {
     line-height: 18px;
     letter-spacing: -0.562737px;
     color: #19191B;
-    margin-left: 50px;
     margin-top: 10px;
 
 }
@@ -174,11 +179,27 @@ nav {
 }
 
 
+
+
 .header-comment-section {
+    width: 70%;
     display: flex;
     flex-direction: row;
     align-items: center;
-    padding: 100px 0px 0px 370px;
+    padding: 100px 0px;
+    margin: 0 auto;
+
+}
+
+main .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-info-box {
+    width: 70%;
 }
 
 .comment-section-info {
@@ -237,7 +258,6 @@ main .container {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-left: 40px;
     background: #FFFFFF;
     box-shadow: 0px 20px 34px 25px rgba(65, 62, 101, 0.102519);
     border-radius: 10px;
@@ -326,6 +346,12 @@ section .container {
     display: flex;
     flex-direction: column;
     padding: 80px 0px 60px 0px;
+    align-items: center;
+    justify-content: center;
+}
+
+.section-info-box {
+    width: 70%;
 }
 
 .section-title {
@@ -372,16 +398,18 @@ section .container {
     display: flex;
     flex-direction: row;
     align-items: center;
-    margin: 70px auto;
     width: 900px;
     height: 180px;
+    padding-right: 30px;
     background-color: #413E65;
     box-shadow: 0px 52px 54px rgba(65, 62, 101, 0.296766);
     border-radius: 10px;
+    margin-top: 70px;
 }
 
 .book-info {
     margin-left: 35px;
+    width: 50%;
 }
 
 .book-title {
@@ -401,7 +429,7 @@ section .container {
 }
 
 .free-link {
-    margin-left: 140px;
+    margin-left: auto;
     padding: 15px 30px;
     background: #F0544C;
     border: 1px solid #C31A12;
@@ -441,18 +469,28 @@ section .container {
     text-align: center;
     letter-spacing: -0.656526px;
     color: #696871;
+    justify-content: center;
 
 }
 
 .reviews-section {
     padding: 30px 0px 60px 0px;
+    
 }
 
 .reviews-section .container {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 30px 0px 50px 40px;
+    padding: 30px 0px 50px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.review-section-info-box {
+    width: 70%;
 }
 
 .reviews {
@@ -580,7 +618,7 @@ section .container {
 .last-section .container {
     display: flex;
     flex-direction: column;
-    padding: 40px;
+    padding: 40px 0px;
 
 }
 
@@ -658,18 +696,25 @@ section .container {
 
 }
 
-.email {
+.list-form {
     display: flex;
-    font-size: 18px;
-    line-height: 21px;
-    letter-spacing: -0.562737px;
-    color: #696871;
-    margin-left: 30px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.email {
+   
+    padding: 10px;
+    border: none;
+    outline: none;
+    font-size: 16px;
 
 }
 
 .email-icon {
-    margin-right: 70px;
+    margin-left: 30px;
+    margin-right: 20px;
 }
 
 .last-section-link {
@@ -752,9 +797,13 @@ section .container {
 .footer-before .container {
     display: flex;
     flex-direction: row;
-    padding: 80px;
+    padding: 80px 0px;
     align-items: center;
 
+}
+
+.footer-info {
+    width: 50%;
 }
 
 .footer-title {
