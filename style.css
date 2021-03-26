@@ -1483,4 +1483,8 @@ footer .container {
     .question-item {
         width: 90%;
     }
+
+    .man-image {
+        margin: 0px;
+    }
 }
