@@ -1244,6 +1244,22 @@ footer .container {
     .question-item {
         width: 70%;
         margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .question-title {
+        text-align: center;
+    }
+
+    .answer {
+        text-align: center;
+    }
+
+    .question-icon {
+        display: none;
     }
 
     .footer-get-link {
@@ -1425,12 +1441,46 @@ footer .container {
     
 
     .comment-section-info {
-        width: 80%;
+        width: 95%;
         text-align: center;
         margin-top: 30px;
     }
 
+    .main-info-box, .section-info-box, .review-section-info-box {
+        width: 90%;
+    }
+
+    .main-thing {
+        width: 90%;
+    }
     .chapter-box {
+        width: 90%;
+    }
+
+    .last-section-item {
+        width: 90%;
+    }
+
+    .book-info {
+        width: 90%;
+    }
+    .author-info{
+        width: 90%;
+    }
+
+    .statistic-item {
+        width: 90%  ;
+    }
+
+    .first-review {
+        width: 90%;
+    }
+
+    .footer-info {
+        width: 90%;
+    }
+
+    .question-item {
         width: 90%;
     }
 }
