@@ -25,13 +25,27 @@ header .container {
 }
 
 nav {
+    width: 95%;
     display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
     
 }
 
 .nav-list {
+    width: 50%;
     display: flex;
-    margin-left: 300px;
+    
+}
+
+.bar-img {
+    width: 25px;
+    display: none;
+}
+
+.nav-title {
+    width: 25%;
 }
 
 .nav-item {
@@ -69,7 +83,7 @@ nav {
 }
 
 .nav-get-link {
-    margin-left: auto;
+    width: 15%;
     padding: 13px 20px;
     background: #F0544C;
     border: 1px solid #C31A12;
@@ -92,6 +106,7 @@ header .container {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
 }
 .header-info {
     padding-top: 100px;
@@ -229,7 +244,7 @@ main .container {
 }
 
 main .container {
-    padding-top: 100px;
+    padding-top: 60px;
 }
 
 .main-title {
@@ -645,7 +660,6 @@ section .container {
 .last-secion-list {
     display: flex;
     flex-direction: row;
-    padding-left: 40px;
     justify-content: space-between;
 }
 
@@ -704,7 +718,7 @@ section .container {
 }
 
 .email {
-   
+   width: 50%;
     padding: 10px;
     border: none;
     outline: none;
@@ -760,7 +774,7 @@ section .container {
 }
 
 .questions-list {
-    margin: 80px 0px 80px 40px;
+    margin: 80px 0px 80px 0px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -823,10 +837,10 @@ section .container {
 }
 
 .footer-get-link {
-    width: 220px;
+    width: 15%;
     height: 50px;
     display: inline-block;
-    margin-left: 200px;
+    margin-left: auto;
     padding: 12px 30px;
     text-decoration: none;
     color: white;
@@ -898,9 +912,20 @@ footer .container {
     .header-info-box {
         padding-top: 20px;
     }
+    .header-info-title, .main-title, .section-title, .review-section-title {
+        font-size: 48px;
+    }
 
+    .about-author, .last-section-title, .footer-title {
+        font-size: 48px;
+    }
     .footer-list {
         margin-left: 250px;
+    }
+
+    .footer-get-link {
+        width: 17%;
+        margin-left: 260px;
     }
 
   
@@ -912,6 +937,12 @@ footer .container {
         width: 900px;
     }
 
+    .nav-get-link {
+        width: 18%;
+    }
+
+    
+
     .header-photo {
         width: 400px;
     }
@@ -921,11 +952,11 @@ footer .container {
     }
 
     .header-comment-section {
-        padding-left: 200px;
+       width: 70%;
     }
 
     .chapter-box {
-        width: 800px;
+        width: 100%;
         margin-left: 10px;
         justify-content: space-around;
     }
@@ -942,11 +973,21 @@ footer .container {
         margin-left: 200px;
     }
 
+    .book-box {
+        width: 90%;
+        margin: 60px auto;
+    }
+
     .last-section-item {
         display: flex;
         flex-direction: column;
         text-align: center;
         justify-content: flex-end;
+    }
+
+    .footer-get-link {
+        margin-left: 200px;
+        width: 19%;
     }
 
 }
@@ -962,12 +1003,23 @@ footer .container {
         padding-top: 70px;
     }
 
-    .header-info-title {
-        font-size: 46px;
+    .header-info-title, .main-title, .section-title, .review-section-title {
+        font-size: 38px;
     }
 
+    .about-author, .last-section-title, .footer-title {
+        font-size: 38px;
+    }
+
+    .header-info-item, .comment-section-text, .main-text, .chapter-answer, .chapter-answer, .section-text, .advantage-item, .statistic-info, .review-section-subtitle, .review-text, .last-section-text, .last-item-info, .footer-sub-text {
+        font-size: 18px;
+    }
+
+    .email {
+        font-size: 15px;
+    }
     .book-box {
-        width: 800px;
+        width: 100%;
     }
 
     .book-info {
@@ -983,9 +1035,402 @@ footer .container {
     }
 
     
+
+    
     .reviews {
         display: flex;
         justify-content: space-between;
         align-items: auto;
+    }
+
+    .footer-get-link {
+        width: 20%;
+    }
+
+    .footer-list {
+        margin-left: 100px;
+    }
+}
+
+
+@media (max-width:820px) {
+    .container {
+        width: 700px;
+    }
+
+    .nav-get-link {
+        width: 20%;
+    }
+
+    .header-info { 
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .header-info-title {
+       
+        text-align: center;
+    }
+
+    .header-info-item {
+        margin-top: 20px;
+    }
+    .checked {
+        margin-right: 18px;
+    }
+
+    .one {
+        display: none;
+    }
+
+    .chapter-box {
+        width: 70%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .chapter-number {
+        position: relative;
+    }
+
+    .left-icon {
+        position: absolute;
+        left: -160%;
+        bottom: -140px;
+    }
+
+    .chapter-info {
+        width: 90%;
+        text-align: center;
+        
+    }
+
+    .chapter-question {
+        font-size: 22px;
+        margin-bottom: 10px;
+     
+    }
+
+    .chapter-answer {
+        font-size: 16px;
+    }
+
+
+    .main-info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .main-thing {
+        width: 70%;
+        margin-left: 0px;
+    }
+
+    .book-box {
+        justify-content: space-between;
+    }
+
+    .advantage-list {
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+
+    .advantage-item {
+        width: 47%;
+    }
+
+    .book-info {
+        width: 40%;
+        margin-left: 0px;
+    }
+    .book-title {
+        font-size: 20px;
+    }
+
+    .book-box-info {
+        font-size: 16px;
+    }
+
+    .free-link {
+        width: 27%;
+        font-size: 15px;
+        margin-left: 0px;
+    }
+
+    .statistic-list {
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .statistic-item {
+        width: 80%;
+        margin-top: 20px;
+        text-align: center;
+        margin-left: 0px;
+    }
+
+    .reviews {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .first-review {
+        width: 70%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        margin-top: 30px;
+    }
+
+    .review-owner-box {
+        margin-top: 0px;
+    }
+
+
+    .review-link {
+        margin-top: 30px;
+    }
+
+    .author-infos {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+       
+    }
+
+    .information {
+        width: 90%;
+        margin-top: 30px;
+        text-align: center;
+    }
+
+    .last-secion-list {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .last-section-item {
+        width: 70%;
+        margin-bottom: 20px;
+    }
+
+
+    .last-section-link, .last-section-red-link {
+        width: 100%;
+    }
+
+    .last-item-info {
+        text-align: center;
+    }
+
+    .questions-list {
+        width: 100%;
+        flex-wrap: wrap;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    }
+
+    .question-item {
+        width: 70%;
+        margin-top: 20px;
+    }
+
+    .footer-get-link {
+        width: 23%;
+        margin-left: auto;
+    }
+
+    .footer-list {
+        margin-left: auto;
+    }
+}
+
+
+@media (max-width:720px) {
+    .container {
+        width: 600px;
+    }
+
+    .nav-list {
+        margin: 0 auto;
+    }
+
+    .nav-get-link {
+        width: 25%;
+    }
+
+    .free-link {
+        width: 30%;
+        padding: 15px;
+    }
+
+    .chapter-box {
+        width: 350px;
+        
+    }
+
+    .chapter-answer {
+        display: none;
+    }
+
+
+    .chapter-number {
+        position: relative;
+    }
+
+    .left-icon {
+        position: absolute;
+        left: -210%;
+        bottom: -100px;
+    }
+    .footer-before .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .author-info, .name {
+        margin-left: 0px;
+    }
+
+    .footer-info {
+        width: 60%;
+    }
+    .footer-title {
+        line-height: normal;
+        text-align: center;
+    }
+
+    .footer-sub-text {
+        line-height: normal;
+        text-align: center;
+    }
+
+    .footer-get-link {
+        width: 28%;
+        margin: 0px;
+        margin-top: 20px;
+    }
+
+    .footer .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .footer-list {
+        margin: 0px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .footer-text {
+        margin: 0px;
+    }
+}
+
+@media (max-width:620px) {
+    .container {
+        width: 500px;
+    }
+
+    .header-info {
+        width: 90%;
+        text-align: center;
+        padding-top: 30px;
+    }
+
+    .header-info-box {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .header-photo {
+        display: none;
+    }
+    .footer-get-link {
+        width: auto;
+    }
+
+    .header-comment-section  {
+        padding-bottom: 40px;
+    }
+    .book-box {
+        width: 95%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .free-link {
+        width: auto;
+        margin-top: 20px;
+    }
+
+    .book-title {
+        text-align: center;
+    }
+
+    .book-photo, .book-box-info {
+        display: none;
+    }
+
+    .advantage-item {
+        width: 80%;
+    }
+
+    .nav-list, .nav-get-link {
+        display: none;
+    }
+
+    .bar-img {
+        display: block;
+    }
+
+ 
+}
+
+
+@media (max-width:520px) {
+    .container {
+        width: 90%;
+    }
+
+    .header-comment-section {
+     
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    
+
+    .comment-section-info {
+        width: 80%;
+        text-align: center;
+        margin-top: 30px;
+    }
+
+    .chapter-box {
+        width: 90%;
     }
 }
