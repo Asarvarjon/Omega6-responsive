@@ -1203,6 +1203,7 @@ footer .container {
         flex-direction: column;
         align-items: center;
         justify-content: center;
+        margin-left: 0px;
        
     }
 
@@ -1438,6 +1439,22 @@ footer .container {
         justify-content: center;
     }
 
+    .header-info-list {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .header-info-item {
+       
+        text-align: center;
+    }
+
+    .checked {
+        display: none;
+    
+    }
     
 
     .comment-section-info {
@@ -1465,7 +1482,7 @@ footer .container {
         width: 90%;
     }
     .author-info{
-        width: 90%;
+        width: 100%;
     }
 
     .statistic-item {
