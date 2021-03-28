@@ -1322,6 +1322,10 @@ footer .container {
         margin-left: 0px;
     }
 
+    .footer-before .container {
+        padding-bottom: 20px;
+    }
+
     .footer-info {
         width: 60%;
     }
